@@ -22,7 +22,7 @@ function AppBar() {
         <div className="flex items-center gap-x-6">
           <Link to="/" className="flex items-center gap-x-2">
             <img
-              src="/kananos_garage_logo.webp"
+              src="/logo.webp"
               alt="Kanano's Garage Logo"
               className="h-12 w-auto rounded-3xl"
             />
@@ -34,21 +34,21 @@ function AppBar() {
           <nav className="hidden md:flex gap-x-6">
             <Link
               to="/cars"
-              className={`text-xl hover:text-blue-400 transition flex items-center ${location.pathname === "/cars" ? "pointer-events-none text-blue-500" : "text-white"}`}
+              className={`text-xl hover:text-red-400 transition flex items-center ${location.pathname === "/cars" ? "pointer-events-none text-red-500" : "text-white"}`}
             >
               <FaCarSide className="inline-block mr-2" />
               <span className="mr-2 text-xl">{t("menu.cars")}</span>
             </Link>
             <Link
               to="/inspections"
-              className={`text-xl hover:text-blue-400 transition flex items-center ${location.pathname === "/inspections" ? "pointer-events-none text-blue-500" : "text-white"}`}
+              className={`text-xl hover:text-red-400 transition flex items-center ${location.pathname === "/inspections" ? "pointer-events-none text-red-500" : "text-white"}`}
             >
               <GiAutoRepair className="inline-block mr-2" />
               <span>{t("menu.inspections")}</span>
             </Link>
             <Link
               to="/parts"
-              className={`text-xl hover:text-blue-400 transition flex items-center ${location.pathname === "/parts" ? "pointer-events-none text-blue-500" : "text-white"}`}
+              className={`text-xl hover:text-red-400 transition flex items-center ${location.pathname === "/parts" ? "pointer-events-none text-red-500" : "text-white"}`}
             >
               <TbPackages className="inline-block mr-2" />
               <span>{t("menu.parts")}</span>
