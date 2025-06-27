@@ -1,0 +1,232 @@
+{
+  "home": {
+    "title": "¡Bienvenido a tu app de gestión de vehículos!",
+    "subtitle": "¿Realizas el mantenimiento en casa? ¿Quieres guardar un registro de los mantenimientos/reparaciones en talleres externos? ¡Esta es tu app!"
+  },
+  "menu": {
+    "home": "Home",
+    "cars": "Vehículos",
+    "inspections": "Mantenimientos",
+    "parts": "Piezas"
+  },
+  "common": {
+    "actions": {
+      "add": "Agregar",
+      "actions": "Acciones",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "close": "Cerrar",
+      "continue": "Continuar",
+      "edit": "Editar",
+      "new": "Nuevo",
+      "remove": "Eliminar",
+      "detail": "Detalle",
+      "download": "Descargar"
+    },
+    "error": {
+      "required": "Este campo no puede estar vacío",
+      "not-found": "No se ha encontrado el item solicitado"
+    },
+    "filters": "Filtros",
+    "loading": "Cargando",
+    "no-data": "-- Sin datos --",
+    "no-image": "Sin imagen",
+    "not-found": {
+      "title": "No encontrado",
+      "message": "¡Ups! Te has metido en algo en lo que no deberías, pero está bien. Aquí tienes un chiste y un botón para volver a la página principal.",
+      "button": "¡Sácame de aquí!"
+    },
+    "pagination": {
+      "page": "Página"
+    },
+    "upload": {
+      "image": "Seleccione una imagen"
+    },
+    "confirmation-modal": {
+      "title": "Confirmación",
+      "message": "¿Estás seguro de que deseas continuar?"
+    },
+    "notifications": {
+      "404": {
+        "title": "No encontrado",
+        "message": "Elemento no encontrado"
+      },
+      "500": {
+        "title": "Error interno del servidor",
+        "message": "Ups! Algo ha pasado al otro lado, inténtalo de nuevo!"
+      },
+      "default": {
+        "title": "Error desconocido",
+        "message": "Contacta con el administrador para poder investigarlo"
+      }
+    }
+  },
+  "cars": {
+    "title": "Vehículos",
+    "fields": {
+      "brand": "Marca",
+      "model": "Modelo",
+      "year": "Año",
+      "plate": "Matrícula",
+      "fuel": "Combustible",
+      "oilViscosities": "Aceite",
+      "itv": "Última ITV"
+    },
+    "detail": {
+      "itv": "Última ITV: {{date}}"
+    },
+    "form": {
+      "title": "Edición de vehículo",
+      "title-new": "Nuevo vehículo"
+    },
+    "table": {
+      "car": "Vehículo",
+      "last-inspection": "Última revisión",
+      "last-itv": "Última ITV"
+    },
+    "messages": {
+      "delete-title": "¡Precaución!",
+      "delete-confirm": "¿Estás seguro de que deseas eliminar el <strong>{{car}}</strong>? <br> No podrás acceder nunca más a sus datos, ni a sus mantenimientos ni a las piezas utilizadas en ellos."
+    },
+    "notifications": {
+      "save": {
+        "title": "Vehículo guardado",
+        "message": "El vehículo ha sido guardado correctamente"
+      },
+      "delete": {
+        "title": "Vehículo eliminado",
+        "message": "El vehículo ha sido eliminado correctamente"
+      }
+    }
+  },
+  "inspections": {
+    "title": "Mantenimientos",
+    "title-form": "Edición de mantenimiento",
+    "title-form-new": "Nuevo mantenimiento",
+    "fields": {
+      "car": "Vehículo",
+      "maintenance": "Mantenimiento",
+      "type": "Tipo",
+      "labor-price": "Precio mano de obra",
+      "payment-status": "Pago",
+      "mileage": "Kilometraje",
+      "date": "Fecha",
+      "notes": "Notas",
+      "notes-placeholder": "Escribe tus notas aquí...",
+      "status": "Estado",
+      "location": "Ubicación",
+      "oil-changed": "Cambio de aceite",
+      "oil-filter": "Filtro de aceite",
+      "air-filter": "Filtro de aire",
+      "air-cabin-filter": "Filtro de habitáculo",
+      "battery": "Batería",
+      "tyres": "Neumáticos",
+      "invoice": "Factura"
+    },
+    "filters": {
+      "car": "-- Vehículo --"
+    },
+    "detail": {
+      "title": "Mantenimiento del {{date}}",
+      "no-notes": "No hay notas para mostrar"
+    },
+    "management": {
+      "form": {
+        "liters": "litros",
+        "per-liters": "/litro"
+      },
+      "no-saved-parts-message": "Es necesario cubrir los datos de arriba y guardar antes de añadir piezas",
+      "errors": {
+        "required": "El campo {{field}} es obligatorio"
+      },
+      "invoice": {
+        "upload": "Subir factura",
+        "remove": "Eliminar factura",
+        "preview": "Visualizar"
+      }
+    },
+    "download": {
+      "workshop-invoice": "factura-taller"
+    },
+    "messages": {
+      "delete-title": "¡Precaución!",
+      "delete-confirm": "¿Estás seguro de que deseas eliminar el mantenimiento del <strong>{{inspection}}</strong> del día <strong>{{date}}</strong>?"
+    },
+    "notifications": {
+      "save": {
+        "title": "Mantenimiento guardado",
+        "message": "El mantenimiento ha sido guardado correctamente"
+      },
+      "delete": {
+        "title": "Mantenimiento eliminado",
+        "message": "El mantenimiento ha sido eliminado correctamente"
+      }
+    }
+  },
+  "parts": {
+    "title": "Piezas",
+    "title-form": "Edición de pieza",
+    "title-form-new": "Nueva pieza",
+    "fields": {
+      "name": "Nombre",
+      "barcode": "Nº identificación",
+      "quantity": "Cantidad",
+      "price": "Precio",
+      "type": "Tipo",
+      "oilViscosity": "Viscosidad",
+      "priceSources": "Tiendas disponibles"
+    },
+    "modal": {
+      "title": "Añadir pieza",
+      "select-part": "Selecciona una pieza",
+      "form": "Formulario",
+      "part-detail": "Detalle de la pieza"
+    },
+    "messages": {
+      "delete-title": "¡Precaución!",
+      "delete-confirm": "¿Estás seguro de que quieres desasignar <strong>{{part}}</strong> al mantenimiento?"
+    },
+    "notifications": {
+      "save": {
+        "title": "Pieza guardada",
+        "message": "La pieza ha sido guardada correctamente"
+      },
+      "delete": {
+        "title": "Mantenimiento eliminado",
+        "message": "La pieza ha sido eliminada correctamente"
+      }
+    }
+  },
+  "enum": {
+    "fuel-type": {
+      "petrol": "Gasolina",
+      "diesel": "Diesel",
+      "electric": "Eléctrico",
+      "hybrid": "Híbrido"
+    },
+    "inspection-status": {
+      "pending": "Pendiente",
+      "in-progress": "En progreso",
+      "finished": "Completado"
+    },
+    "inspection-location": {
+      "home": "Casa",
+      "other": "Otro"
+    },
+    "inspection-type": {
+      "maintenance": "Mantenimiento",
+      "repair": "Reparación"
+    },
+    "inspection-payment-status": {
+      "not-paid": "No pagado",
+      "paid": "Pagado"
+    },
+    "part-type": {
+      "oil": "Aceite",
+      "other": "Otro"
+    }
+  },
+  "pdf-previewer": {
+    "title": "Visor de PDFs"
+  }
+}

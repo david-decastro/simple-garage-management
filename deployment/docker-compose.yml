@@ -1,0 +1,38 @@
+services:
+  client-garage:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    container_name: simple-garage-client
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+  server-garage:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile.server
+    container_name: simple-garage-server
+    environment:
+      - DB_HOSTNAME=mongodb
+      - PORT=5000
+      - NODE_ENV=production
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../files:/app/files
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:8.0.10
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
