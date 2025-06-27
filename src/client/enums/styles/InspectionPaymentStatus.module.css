@@ -1,0 +1,7 @@
+.inspection-payment-status-paid {
+    color: green;
+}
+
+.inspection-payment-status-not-paid {
+    color: red;
+}
